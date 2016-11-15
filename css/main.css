@@ -21,7 +21,7 @@
 }
 
 .wrapper {
-	background-color: black;
+	background-color: #400000;
 	margin: 0 auto;
 	width: 75%
 }
@@ -219,17 +219,6 @@
 2.0 - color
 -------------------------------------------------------------- */
 
-.red {
-	background-color: red;	
-	height: 50px;	
-}
-
-.orange {
-	background-color: orange;	
-	height: 50px;	
-}
-
-
 bg-black {
 	background-image: image()
 }
@@ -305,7 +294,7 @@ img {
 .logo 
 	{
 	font-family: 'Rock Salt', cursive;
-	color: green;
+	color: whitesmoke;
 	display: inline-block;
 	font-size: 2rem;
 	margin: 1rem;
@@ -316,8 +305,16 @@ body {
 	color: black;
 }
 
-h2, h3, nav li a {
-	color: red;
+h1 {
+	color: #bf0000;
+}
+
+h2, h3 {
+	color: #800000;
+}
+
+nav li a {
+	color: whitesmoke;
 }
 
 
@@ -346,9 +343,9 @@ ul {
 }
 
 button {
-	border-color: green;
-	background-color: green;
-	border: double;
+	border-color: #FF0000;
+	background-color: #BF0000;
+	border: solid;
 	align-content: center;
 	color: white;
 	text-align: center;
@@ -359,7 +356,7 @@ button {
 }
 
 button: hover {
-	background-color: blue;
+	background-color: #400000;
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 /*
