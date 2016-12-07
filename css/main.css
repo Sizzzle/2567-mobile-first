@@ -21,7 +21,6 @@
 }
 
 .wrapper {
-	background-color: #400000;
 	margin: 0 auto;
 	width: 75%
 }
@@ -219,9 +218,7 @@
 2.0 - color
 -------------------------------------------------------------- */
 
-bg-black {
-	background-image: image()
-}
+
 /*--------------------------------------------------------------
 3.0 - media
 -------------------------------------------------------------- */
@@ -305,6 +302,18 @@ body {
 	color: black;
 }
 
+
+p {
+	font-size: 2rem;
+	line-height: 2rem;
+}
+
+p:first-child {
+	color: #ff0000;
+}
+
+
+
 h1 {
 	color: #bf0000;
 }
@@ -313,10 +322,9 @@ h2, h3 {
 	color: #800000;
 }
 
-nav li a {
-	color: whitesmoke;
+.bold {
+	font-weight: 700;
 }
-
 
 /*h1 h2 h3 h4 li p nav a footer ul*/
 
@@ -326,21 +334,26 @@ nav li a {
 7.0 - navigation
 -------------------------------------------------------------- */
 
-nav li > a {
-	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: 300;
-	display: inline-block;
-	padding: 0 2rem;
+
+ul {
+	padding-top: 1rem;
+	text-align: center;
+	list-style: none;
+	
 	
 }
 
-ul {
+nav ul li {
+	display: inline-block;
+	list-style:none;
 	float: right;
-	padding-top: 1rem;
-	text-align: center;
+	padding: 10px;
+	color: black;
+	list-style-type: none;
+	text-decoration: none;
 	
 }
+
 
 button {
 	border-color: #FF0000;
@@ -353,6 +366,19 @@ button {
 	font-size: 1.5rem;
 	padding: .5rem;
 	border-radius: 1.25rem;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	border-style: solid;
+	border-color: transparent;
+	border-width: 1px;
+	
+}
+
+a:hover {
+	border-bottom-color: #FF0000;
 }
 
 button: hover {
@@ -402,6 +428,55 @@ html ids
 }
 
 .wrapper {
-	width: 100%;
+	width: 80%;
 	margin: 0 auto;
+}
+
+.p-t-sm {
+	padding-top: 10px;
+}
+.p-t-md {
+	padding-top: 20px;
+}
+.p-t-lg {
+	padding-top: 50px;
+}
+.p-b-lg {
+	padding-bottom: 50px;
+}
+.p-b-xl {
+	padding-bottom: 100px;
+}
+.m-t-0 {
+	margin-top: 0;
+}
+.m-b-lg {
+	margin-bottom: 50px;
+}
+
+#hero { 
+  background: url(../img/hero.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+figure {
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+
+.push-right {
+	float: right !important;
+}
+
+.txt-uppercase {
+	text-transform:uppercase;
+}
+
+.txt-center {
+	text-align: center;
 }
