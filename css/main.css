@@ -304,22 +304,36 @@ body {
 
 
 p {
-	font-size: 2rem;
-	line-height: 2rem;
+	font-size: 1rem;
+	line-height: 1.4rem;
 }
 
 p:first-child {
 	color: #ff0000;
+	font-size: 2.65rem;
+	line-height: 3rem;
 }
-
 
 
 h1 {
-	color: #bf0000;
+	color: #ff0000;
+	font-size: 2.75rem;
+	font-weight: 400;
+	text-align: center;
 }
 
-h2, h3 {
+h2 {
+	color: #bf0000;
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+h3 {
 	color: #800000;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: center;
 }
 
 .bold {
@@ -335,12 +349,13 @@ h2, h3 {
 -------------------------------------------------------------- */
 
 
-ul {
+ul li {
 	padding-top: 1rem;
 	text-align: center;
 	list-style: none;
-	
-	
+	display: inline-block;
+	margin: 0 auto;
+
 }
 
 nav ul li {
@@ -355,7 +370,7 @@ nav ul li {
 }
 
 
-button {
+.button1 {
 	border-color: #FF0000;
 	background-color: #BF0000;
 	border: solid;
@@ -364,7 +379,22 @@ button {
 	text-align: center;
 	display: inline-block;
 	font-size: 1.5rem;
-	padding: .5rem;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	border-radius: 1.25rem;
+}
+
+.button2 {
+	border-color: #FF0000;
+	background-color: #BF0000;
+	border: solid;
+	align-content: center;
+	color: white;
+	text-align: center;
+	display: inline-block;
+	font-size: 1.5rem;
+	padding-right: 2.1rem;
+	padding-left: 2.1rem;
 	border-radius: 1.25rem;
 }
 
@@ -425,6 +455,7 @@ html ids
 
 .row {
 	overflow: auto;
+	display: inline;
 }
 
 .wrapper {
@@ -479,4 +510,13 @@ figure {
 
 .txt-center {
 	text-align: center;
+}
+
+footer {
+font-size: .5rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
 }
