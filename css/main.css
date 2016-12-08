@@ -370,33 +370,36 @@ nav ul li {
 }
 
 
-.button1 {
+.button1, .button2 {
 	border-color: #FF0000;
 	background-color: #BF0000;
 	border: solid;
 	align-content: center;
 	color: white;
 	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
 	display: inline-block;
 	font-size: 1.5rem;
 	padding-right: 1rem;
 	padding-left: 1rem;
-	border-radius: 1.25rem;
+	-moz-border-radius: .75rem;
+	-ms-border-radius: .75rem;
+	-o-border-radius: .75rem;
+	-webkit-border-radius: .75rem;
+	border-radius: .75rem;
 }
 
 .button2 {
-	border-color: #FF0000;
-	background-color: #BF0000;
-	border: solid;
-	align-content: center;
-	color: white;
-	text-align: center;
-	display: inline-block;
-	font-size: 1.5rem;
 	padding-right: 2.1rem;
 	padding-left: 2.1rem;
-	border-radius: 1.25rem;
 }
+	
+.button1:hover, .button2:hover {
+	border-color: #BF0000;
+	background-color: #ffffff;
+	color: #000000;
+}	
 
 a {
 	text-decoration: none;
