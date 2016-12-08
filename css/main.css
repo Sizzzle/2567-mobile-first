@@ -46,11 +46,6 @@
 	padding-right: 0;
 }
 
-/*--- col-1 ---- */
-.col-1-1 {
-	width: 100%;
-}
-
 /*--- col-2 ---- */
 .col-1-2 {
 	width: 50%;
@@ -161,7 +156,6 @@
 }
 
 .col-7-10 {
-	width: 70%;	
 }
 
 /*--- col-11 ---- */
@@ -225,6 +219,31 @@
 
 img {
 	max-width: 100%;	
+}
+
+#team li:first-child a {
+	background-image: url(../img/fb-sprite.png);
+}
+
+#team li:nth-child(2) a {
+	background-image: url(../img/twitter-sprite.png);
+}
+
+#team li:first-child a, #team li:nth-child(2) a {
+background-repeat: no-repeat;
+	background-position: 0 0;
+	height: 35px;
+	width: 35px;
+}
+
+#team li:first-child a:hover, #team li:nth-child(2) a:hover {
+	text-decoration-skip: objects;
+	background-position: 0 -35px;
+
+}
+
+#team li:first-child a, #team li:nth-child(2) a {
+	display: inline-block;
 }
 
 /*--------------------------------------------------------------
@@ -308,7 +327,11 @@ p {
 	line-height: 1.4rem;
 }
 
-p:first-child {
+footer p: {
+	font-size: 5rem;
+}
+
+div.center-block > p:first-of-type {
 	color: #ff0000;
 	font-size: 2.65rem;
 	line-height: 3rem;
@@ -335,6 +358,10 @@ h3 {
 	font-weight: 400;
 	text-align: center;
 }
+
+h3 {
+margin-top: -.05rem;
+} 
 
 .bold {
 	font-weight: 700;
@@ -369,6 +396,31 @@ nav ul li {
 	
 }
 
+footer nav ul li {
+	float: left;	
+}
+
+footer p {
+	font-size: .5rem;
+	line-height: .8rem;
+}
+
+#team ul li a {
+    height: 35px;
+    width: 35px;
+	text-decoration: none;
+    text-transform: uppercase;
+	background-color: transparent;
+	display: block;
+    text-align: -webkit-match-parent;
+	list-style: none;
+	margin-top: -1.2rem;
+}
+
+#team ul {
+		margin-right: 3rem;
+	margin-top: -.5rem;
+	}
 
 .button1, .button2 {
 	border-color: #FF0000;
@@ -413,6 +465,7 @@ a {
 a:hover {
 	border-bottom-color: #FF0000;
 }
+
 
 button: hover {
 	background-color: #400000;
@@ -507,6 +560,10 @@ figure {
 	float: right !important;
 }
 
+.push-left {
+	float: left !important;
+}
+
 .txt-uppercase {
 	text-transform:uppercase;
 }
@@ -516,7 +573,6 @@ figure {
 }
 
 footer {
-font-size: .5rem;
   right: 0;
   bottom: 0;
   left: 0;
