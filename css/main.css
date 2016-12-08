@@ -237,14 +237,13 @@ background-repeat: no-repeat;
 }
 
 #team li:first-child a:hover, #team li:nth-child(2) a:hover {
-	text-decoration-skip: objects;
 	background-position: 0 -35px;
-
 }
 
 #team li:first-child a, #team li:nth-child(2) a {
 	display: inline-block;
 }
+
 
 /*--------------------------------------------------------------
 4.0 - media queries
@@ -410,11 +409,13 @@ footer p {
     width: 35px;
 	text-decoration: none;
     text-transform: uppercase;
-	background-color: transparent;
-	display: block;
-    text-align: -webkit-match-parent;
-	list-style: none;
+	list-style-type: none;
 	margin-top: -1.2rem;
+	list-style-image: none;
+}
+
+#team ul li a: hover {
+text-decoration: none;
 }
 
 #team ul {
